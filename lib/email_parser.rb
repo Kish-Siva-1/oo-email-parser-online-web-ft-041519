@@ -16,11 +16,9 @@ class EmailParser
   def parse 
     parseholder = []
     delimiters = [",", " "]
-    binding.pry
     parseholder = @emails.split(Regexp.union(delimiters)).reject(&:empty?)
     #dedup emails
-    @emails = parseholder.uniq!
-    @emails
+    parseholder.uniq!
   end 
 
 end
