@@ -19,6 +19,7 @@ class EmailParser
     parseholder = @emails.split(Regexp.union(delimiters)).reject(&:empty?)
     #dedup emails
     @emails = parseholder.uniq!
+    @emails
   end 
 
 end
