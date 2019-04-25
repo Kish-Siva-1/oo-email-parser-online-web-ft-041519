@@ -4,7 +4,22 @@
 # or whitespace (' ').
 
 class EmailParser
+  attr_accessor :emails
+  
+  def initialize(emails)
+    @emails = emails
+  end 
+  
   def parse 
+    parse_holder = []
+    
+    if #CSV 
+    elsif #space delimited
+    elsif #CSV and space     
+    end
+    
+    #dedup emails
+    
     
   end 
 
