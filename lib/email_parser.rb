@@ -11,7 +11,9 @@ class EmailParser
   end 
   
   def parse 
-    parse_holder = []
+    
+    delimiters = [",", " "]
+    @emails.split(Regexp.union(delimiters))
     
     if #CSV 
     elsif #space delimited
